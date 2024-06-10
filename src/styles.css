@@ -25,4 +25,14 @@
   .fieldset {
     @apply border rounded-lg px-8 py-2 flex gap-x-4;
   }
+
+  #overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
