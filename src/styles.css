@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: 'Karla';
+    font-weight: 400;
+    src: url(/Karla-Regular.ttf) format("woff2");
+  }
+
+  @font-face {
+    font-family: 'Karla';
+    font-weight: 700;
+    src: url(/Karla-Bold.ttf) format("woff2");
+  }
+
+
+  body {
+    @apply bg-green-200;
+  }
+
+  .fieldset {
+    @apply border rounded-lg px-8 py-2 flex gap-x-4;
+  }
+}
